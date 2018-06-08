@@ -1,0 +1,37 @@
+cloudWatch
+===========
+1. Dashboard Custoization	
+2. Alerm
+3. Events    				***
+4. Logs			 : we can view multi instance historical        		
+
+	  inforation 
+5. Metrics 
+
+EC2 Management/Edit
+===========================
+
+
+Terminology : IAM , VPC , Tags , Instance etc.
+==================
+IAM role : indetity & Access Management 
+Public DNS (IPv4): domain name server
+IPV 		 : internet Protocol  
+
+
+
+
+Cloud Essentials 
+=========================
+
+
+Connect Linux Instance
+SSH Key generate and add to other system
+
+Package Installation
+-Git Core
+-JDK/Java
+-Web Server Installation(apche)
+-Database Setup : mysql server
+-Jenkins 
+
