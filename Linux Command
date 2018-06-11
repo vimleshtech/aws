@@ -1,0 +1,92 @@
+Linux
+Windows
+
+
+Packages Installation
+===========================
+yum		: package manager		: rehl/centOS/derbin 
+rpm		: package manager		: rehl/centOS
+apt-get		: package manager		: ubuntu
+
+
+
+Repository
+========================
+git-core		:https://github.com
+git-lab
+svn
+
+$pwd		: show current directory 
+$mkdir driname	:  make directory
+$cd dirname	: chnage directory
+$cd ..		: go to one directory back
+$cd ~		:  go to root 
+$cd -		: go to previous directory
+$cal		:
+$date		:
+$ls		: list
+$ll		: long list 
+$cat	>newfilename.txt 	: create new file
+	..
+	..
+ctrl+z		: to save the file
+
+$cat newfilename.txt	: view content 
+$cat newfilename.txt >> newfile1.txt	: copy content from one file to another file 
+$cp from/file.txt	to/filename.txt
+$mv from/file.txt	to/filename.txt	: move file or folder from one location to another
+$rm from/file.txt			: remove file 
+$rmd from
+$rmd from -f		: forcefully remove 
+
+
+permission:
+===========================
+===========================
+-rw-rw-r--. 1 ec2-user ec2-user 13 Jun 11 04:58 a.txt
+drwxrwxr-x. 2 ec2-user ec2-user 36 Jun 11 05:03 data
+
+drwxrwxr-x : directory user group other 
+	   : r- read
+	   : w - write
+	   : x  - execute 
+
+	:u  - user 
+	:g  - group 
+	:o  - other 
+
+drwxrwxr-x: directory
+d : directory 
+- : file
+
+Octal code:
+	4	-read
+	2	-write
+	1	-execute
+
+	7  : rwx
+	6  :rw-
+	5  : r-x
+	
+==========
+$yum update
+$sudo yum update
+
+$sudo yum install git-core
+
+$sudo yum install jre-default
+$sudo yum install python
+$sudo yum install mysql-server
+
+
+
+
+
+
+
+
+
+	
+
+
+
