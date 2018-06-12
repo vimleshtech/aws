@@ -1,0 +1,275 @@
+editor:
+	nano
+	gedit
+	vi 
+	
+
+
+
+GitHub : Cloud Repositoty
+=================================
+Git : Repository
+
+
+
+
+===============================
+Git Repository Life Cycle
+==========================
+
+Local files / folder  -> Convert to Git Repository
+			$git init 
+			-> add to stage 
+			$git add -A 		: all files
+			or
+			$git add abcd.txt	: for one/indivual file 
+
+
+			->git to master ( master is local repository)
+			$git commit -m "message..."
+
+			->push to github 
+			1. Create/add alias of giturl 
+			$git remote add <remote aliasname> <giturl>
+
+			$git push -u <remote alias> master			
+			
+
+			$git status
+			$git log
+			$git diff filname.txt
+
+
+
+Python
+=======================
+$sudo yum install python
+
+Perl
+================
+$sudo yum install perl 
+
+Java
+================
+$wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u171-b11/512cd62ec5174c3487ac17c61aaa89e8/jdk-8u171-linux-x64.tar.gz"
+$tar xzf jdk-8u171-linux-x64.tar.gz
+
+edit .bashcr
+$sudo nano ~/.bashrc
+
+export JAVA_HOME=/opt/jdk1.8.0_171
+export JRE_HOME=/opt/jdk1.8.0_171/jre
+export PATH=$PATH:/opt/jdk1.8.0_171/bin:/opt/jdk1.8.0_171/jre/bin
+
+--save the file 
+
+mysql-server
+==================
+$sudo yum install mysql-server
+
+
+jenkins
+===============
+
+apache tomcat
+====================
+$sudo yum install httpd
+
+wordpress
+============================
+sudo yum install php-gd
+
+nginx
+=======================						
+
+
+======================================================
+    1  pwd
+    2  yum update
+    3  sudo yum update
+    4  sudo yum install git
+    5  git -version
+    6  git --version
+    7  mkdir notes
+    8  cd notes/
+    9  git colone  https://github.com/vimleshtech/aws.git
+   10  git clone  https://github.com/vimleshtech/aws.git
+   11  ll
+   12  cd aws/
+   13  ll
+   14  cat "AWS Session -02.txt"
+   15  cat AWS Session -02.txt
+   16  cd ..
+   17  mkdir myrepo
+   18  cd myrepo
+   19  git init
+   20  cat >emp.txt
+   21  git status
+   22  git add -A
+   23  git commit -m "myfile "
+   24  git status
+   25  git remote add test https://github.com/vimleshtech/aws_test.git
+   26  git push -u test master
+   27  ll
+   28  hisotry
+   29  history
+   30  sudo nano emp.txt
+   31  git diff emp.txt
+   32  sudo nano emp.txt
+   33  git diff emp.txt
+   34  sudo nano emp.tx
+   35  sudo nano emp.txt
+   36  cat emp.txt
+   37  cd ~
+   38  sudo yum install python
+   39  python --version
+   40  python
+   41  sudo yum install perl
+   42  perl --version
+   43  sudo yum install jre-default
+   44  wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://link_copied_from_site"
+   45  wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u171-b11/512cd62ec5174c3487ac17c61aaa89e8/jdk-8u171-linux-x64.tar.gz"
+   46  ll
+   47  tar xzf jdk-8u171-linux-x64.tar.gz
+   48  ll
+   49  java -v
+   50  sudo nano ~/.bashrc
+   51  cd /opt/jdk1.8.0_171/
+   52  ll
+   53  cd jdk1.8.0_171/
+   54  pwd
+   55*
+   56  cd /opt/jdk1.8.0_171/
+   57  sudo nano ~/.bashrc
+   58  ll
+   59  cd ..
+   60  ll
+   61  pws
+   62  pwd
+   63  sudo nano ~/.bashrc
+   64  sudo source ~/.bashrc
+   65  java -version
+   66  history
+ 67      1  pwd
+   68      2  yum update
+   69      3  sudo yum update
+   70      4  sudo yum install git
+   71      5  git -version
+   72      6  git --version
+   73      7  mkdir notes
+   74      8  cd notes/
+   75      9  git colone  https://github.com/vimleshtech/aws.git
+   76     10  git clone  https://github.com/vimleshtech/aws.git
+   77     11  ll
+   78     12  cd aws/
+   79     13  ll
+   80     14  cat "AWS Session -02.txt"
+   81     15  cat AWS Session -02.txt
+   82     16  cd ..
+   83     17  mkdir myrepo
+   84     18  cd myrepo
+   85     19  git init
+   86     20  cat >emp.txt
+   87     21  git status
+   88     22  git add -A
+   89     23  git commit -m "myfile "
+   90     24  git status
+   91     25  git remote add test https://github.com/vimleshtech/aws_test.git
+   92     26  git push -u test master
+   93     27  ll
+   94     28  hisotry
+   95     29  history
+   96     30  sudo nano emp.txt
+   97     31  git diff emp.txt
+   98     32  sudo nano emp.txt
+   99     33  git diff emp.txt
+  100     34  sudo nano emp.tx
+  101     35  sudo nano emp.txt
+  102     36  cat emp.txt
+  103     37  cd ~
+  104     38  sudo yum install python
+  105     39  python --version
+  106     40  python
+  107     41  sudo yum install perl
+  108     42  perl --version
+  109     43  sudo yum install jre-default
+  110     44  wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://link_copied_from_site"
+  111     45  wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u171-b11/512cd62ec5174c3487ac17c61aaa89e8/jdk-8u171-linux-x64.tar.gz"
+  112     46  ll
+  113     47  tar xzf jdk-8u171-linux-x64.tar.gz
+  114     48  ll
+  115     49  java -v
+  116     50  sudo nano ~/.bashrc
+  117     51  cd /opt/jdk1.8.0_171/
+  118     52  ll
+  119     53  cd jdk1.8.0_171/
+  120     54  pwd
+  121     55*
+  122     56  cd /opt/jdk1.8.0_171/
+  123     57  sudo nano ~/.bashrc
+  124     58  ll
+  125     59  cd ..
+  126     60  ll
+  127     61  pws
+  128     62  pwd
+  129     63  sudo nano ~/.bashrc
+  130     64  sudo source ~/.bashrc
+  131     65  java -version
+  132     66  history
+  133  sudo yum install mysql-server
+  134  sudo yum install jenkins
+  135  cd ~
+  136  sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+  137  sudo yum --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+  138  sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+  139  sudo yum install jenkins
+  140  jenkins --version
+  141  jenkins -version
+  142  jenkins --version
+  143  sudo systemctl start jenkins.service
+  144  sudo systemctl start jenkins
+  145  sudo yum install jenkins
+  146  cd ~
+  147  sudo service jenkins status
+  148  systemctl start jenkins
+  149  systemctl enable jenkins
+  150  sudo systemctl start jenkins
+  151  history
+  152  wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org
+  153  /redhat/jenkins.repo
+  154  wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org
+  155  /redhat/jenkins.repo
+  156   wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org
+  157   wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
+  158  sudo yum install nginx
+  159  nginx --version
+  160  nginx -version
+  161  nginx - version
+  162  git -version
+  163  git --version
+  164  nginx --version
+  165  jenkins
+  166  jenkins --version
+  167  yum install jenkins
+  168  sudo yum install jenkins
+  169  sudo systemctl start jenkins.service
+  170  sudo service start jenkins.service
+  171  ifconfig
+  172  sudo yum install apache-tomcat
+  173  wget http://apache.mirrors.ionfish.org/tomcat/tomcat-8/v8.5.9/bin/apache-tomcat-8.5.9.tar.gz
+  174  cd ~
+  175  wget http://apache.mirrors.ionfish.org/tomcat/tomcat-8/v8.5.9/bin/apache-tomcat-8.5.9.tar.gz
+  176  sudo yum install tomcat
+  177  sudo groupadd tomcat
+  178  pwd
+  179  sudo mkdir /opt/tomcat
+  180  pwd
+  181  ls
+  182  sudo useradd -s /bin/nologin -g tomcat -d /opt/tomcat tomcat
+  183  wget http://www-us.apache.org/dist/tomcat/tomcat-8/v8.0.33/bin/apache-tomcat-8.0.33.tar.gz
+  184  wget http://mirror.wanxp.id/apache/tomcat/tomcat-8/v8.5.6/bin/apache-tomcat-8.5.6.tar.gz
+  185  sudo yum install apache2
+  186  sudo yum install apache
+  187  sudo yum install httpd
+  188  sudo yum install wordpress
+  189  sudo yum install php-gd
