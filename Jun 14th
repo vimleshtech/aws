@@ -1,0 +1,75 @@
+  Create Windows Instance : EC2
+============================
+
+linux: -> apahce2, wordpres
+rds  : -> 
+	
+	1. Security Group  : 2 
+	2. IAM Rule 		:1 . Admin , 2. Broser
+	3. Add user in Rule 	: 1. user admin 2. Broser 
+
+
+			
+		
+
+
+	**VPC
+		subnet
+	**
+
+
+
+================================
+IP Protocal
+------------------
+TCP  : data travel
+SSH  : access via ssh/other system
+http : allow request from web browser
+IPV4 : data/file/folder share, ping 
+
+Security Group:
+		Group1 : application server
+		
+
+		u1	g1
+		u2	g1
+		u3
+		u4
+		
+		vm1	g1	
+IAM Rule
+	
+PVC
+	**Subnet	: internal network/sub domain 
+
+	IP Class:
+		A
+		B
+		C
+		D
+		E	
+Custom Rule
+
+userid:
+	Administrator
+pwd:
+
+a2OCXd6UX%VQ?p2B&d?fI-O4HCFtfzSU
+
+instance : 
+ec2-13-58-151-232.us-east-2.compute.amazonaws.com
+
+
+RDP/mstc
+
+
+linux: ec2-user@ec2-52-15-45-87.us-east-2.compute.amazonaws.com
+
+
+
+172.31.30.34	18.221.41.6	
+
+
+RDS : port 3306
+
+		
