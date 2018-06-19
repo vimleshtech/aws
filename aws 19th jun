@@ -1,0 +1,59 @@
+S3 : amazon storage services	
+	-> Create Bucket 
+		-> Folder 
+		-> Upload the files / folder
+
+		https://s3.us-east-2.amazonaws.com/testbucket2.test/sample.war
+
+		https://s3.us-east-2.amazonaws.com/mycode2.code2/sample.war
+
+
+
+	->Create Application:
+		..
+		..
+		upload / source 
+				:S3
+
+				https://s3.us-east-2.amazonaws.com/testbucket2.test/sample.war
+RDS: Database 
+	-> Replica
+	-> backup
+	-> Log 
+	etc.
+	->Client connect
+
+
+https://github.com/vimleshtech/testproject2.git
+================================
+Step 1: 
+	VPC
+	Subnet 1
+	Subnet 2
+
+Step 2:
+	Security Group 	
+Step 3: 
+	1 EC2
+	
+Step 4:
+	RDS DB
+
+Setp 5:
+	S3 Backet
+
+Step 6:
+	create ec2 elastic  : web application 
+
+
+
+
+-> sql client 
+-> EBS / Load balance
+-> Access
+-> Lambda Express
+-> Cloud Watch 
+
+Step 
+	
+
