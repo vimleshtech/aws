@@ -1,0 +1,61 @@
+EC2  : vm / system where we can install our packages and deploy the required
+
+S3   : Storage 		
+	-> G Drive
+
+	->static content/ fix content
+	->logs 
+	->backup 
+
+
+	mywebprojectcode : backet name
+	https://s3.ap-south-1.amazonaws.com/mywebprojectcode/index.html : endpoint/link
+	https://s3.ap-south-1.amazonaws.com/mywebprojectcode/testfolder/sample.war
+
+	
+
+
+EBS  : Elastic Block Storage 
+
+	-> Block level storage 			: RDS 
+		c:	
+			page1/block1
+			page2/block2
+			page2/block3
+
+		d:
+		e:
+		f:
+
+EFS : Elastic file storage 
+
+Beanstalk  : web hosting 
+		
+RDS 	  : relational database storage /system
+	
+
+VPC     : virtual private cloud
+	 Subnet :
+		private domain
+
+CloudFront : website dev/manage/moniter 
+
+
+Quality check and reporting
+==============================================
+SQS	: query/quality services 
+CloudWatch
+ 
+	
+ 
+	 
+	
+
+Security Group:
+
+Subnet Group:
+
+
+mysql -h dbc92.c5hirw5yqvlp.us-east-2.rds.amazonaws.com -u userid -p
+
+		
