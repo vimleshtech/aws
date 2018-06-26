@@ -1,0 +1,23 @@
+EC2
+RDS  :** CONNECTION /
+S3   :
+BEANSTALKS
+	-environment  
+	-java				: .jar , java - core
+	-apahce-tomcat (webserver)	: .war  , java -web
+	-nodeJS				: mean , angular, reactjs, vuejs, express 
+	-python
+	-PHP			
+	-.net 	
+	etc.
+	
+EBS  	/ EFS 
+
+CLOUDFRONT : build and deploye the web on   BEANSTALKS 
+CLOUDWATCH :
+-----------------------------------------------------
+
+AUTOSCALE  :
+
+SQS		: scripting  (java, python..,perl,)	 
+LAMBDA		: scripting  (json)
