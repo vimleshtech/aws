@@ -1,0 +1,9 @@
+instance name	:learning-instance : 3306  
+user id		:mysqluser
+password 	:aws12345
+database name	:hrms		
+
+
+
+end point		: learning-instance.cmftvs8ui1w8.us-west-2.rds.amazonaws.com
+
