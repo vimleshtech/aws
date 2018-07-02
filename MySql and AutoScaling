@@ -1,0 +1,155 @@
+RDS : RDBMS (relational database management system)
+=====================================================
+There are following products/server:
+
+1. My SQL Server
+2. MS SQL Server
+3. Oracle 
+4. MariaDB
+5. MongoDB
+etc.
+
+1. My SQL Server : to store data in tabular format
+=============================
+Database :	is relational structure which contains data in tabular format and different types of object
+		1. table
+		2. function
+		3. views
+		etc.
+Table	: is combinition of rows and columns 	
+Row	: is obseration or tuple or informations about one entity 	
+Column	: is attribute or field 
+Data Type: container types
+		:int
+		:varchar(100) --here 100 is no. chas.
+		:datetime
+		:float
+		:bit 
+		etc
+
+
+
+There are following types of SQL Command:
+1. DDL: data definition language 
+	-create
+	-alter		: modify physical structure
+	-drop		: drop the object 
+	-truncate	: delete all rows from table , but structure will remain same 
+2. DML :data manipulation language
+	-insert
+	-update		: update value in existing row
+	-delete		: remove row 
+3. DCL : data/decision control language
+	-create user		
+	-grant access
+	-revoke access
+4. TCL	: transaction control language
+	-begin transaction	
+	-commit		: save data 	
+	-rollback	: revert data 
+5. DQL : data query language 
+	-select		: view data 
+
+
+
+where
+order by
+group by
+join   : to merge two or more than two tables 
+	: at least one column must be same in all tables logically
+	there are following types of join:
+	i. inner join 
+	ii. outer /full outer join
+		a. left join 
+		b. right join
+
+	other types of join:
+		-self join
+		-cross join/cartisan product
+
+
+	example:
+	emp
+	eid name gender country
+
+
+	salary
+	sid  employeeid  hra  basic
+
+
+	output:
+	eid name country hra basic
+
+
+union 	: to merge two or more than two tables 
+	: list of columns and data must be same 
+		
+
+	example:
+	emp_new
+	eid  ename  gender doj 
+	100	aa	m	
+	101	bb	f
+	
+
+	emp_history
+	eid ename gender doj lod
+	1	a  m	
+	2  	b  m
+	3	c  f
+
+	select eid,ename,gender,doj,null from emp_new
+	union
+	select eid,ename,gender,doj,lod from emp_history;
+
+	output:
+	eid ename gender doj	lod
+	1	a  ...		..
+	2	b		..
+	3	c ...		..
+	100	aa		null
+	200	bb	..	null
+>show databases;     #show list of databases 
+>create database <dbname> ; # create database 
+>cd <dbame>  ;    #switch database 
+>show tables;   # show list of existing tables
+>create table <tblname>
+(
+col1 datatype,
+col2 datatype,
+col3 datatype
+);
+
+
+>select * from <tblname>;   # show data from table , here *  means show all columns
+>insert into <tblname><col1,col2,col3) values(val1,val2,val3);
+
+#selection 
+>select * from tblname  where col1 = 11;
+
+##projection
+>select col1,col2 from tblname;
+
+
+###
+>select col1,col2 from tblname where col1=11;
+
+#to arrange/show data in ascending and decending order 
+>select * from tblname order by col1 desc;
+
+#summarize data 
+>select gender, count(*) from tblname group by gender;
+>select gender, sum(salary) from tblname group by gender;
+>select gender, max(salary) from tblname group by gender;
+>select gender, min(salary) from tblname group by gender;
+
+
+
+
+
+
+host:
+	dbc92.c5hirw5yqvlp.us-east-2.rds.amazonaws.com
+user id:
+passwor:
+
