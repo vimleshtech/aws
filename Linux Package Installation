@@ -66,7 +66,7 @@ export PATH=$PATH:/opt/jdk1.8.0_171/bin:/opt/jdk1.8.0_171/jre/bin
 mysql-server
 ==================
 $sudo yum install mysql-server
-
+https://www.tecmint.com/install-latest-mysql-on-rhel-centos-and-fedora/
 
 jenkins
 ===============
