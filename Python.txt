@@ -1,0 +1,36 @@
+import mysql.connector
+con=mysql.connector.connect(user='jasneet',password='abcd1234',
+                            host='mysql-9july.cficqzggo7li.eu-west-2.rds.amazonaws.com',
+                            database='mysql_9July')
+
+
+cr = con.cursor()
+
+cr.execute("select * from users")
+
+res = cr.fetchall()
+
+for r in res:
+    print r
+
+import mysql.connector
+con=mysql.connector.connect(user='jasneet',password='abcd1234',
+                            host='mysql-9july.cficqzggo7li.eu-west-2.rds.amazonaws.com',
+                            database='mysql_9July')
+
+
+cr = con.cursor()
+
+#cr.execute("create table users(uid int, uname varchar(100))")
+
+for i in range(0,5):
+        
+    i = raw_input('enter id :')
+    n = raw_input('enter name :')
+
+    cr.execute("insert into users(uid,uname) values("+i+",'"+n+"')")
+
+con.commit()
+
+
+print 'data is saved.'
