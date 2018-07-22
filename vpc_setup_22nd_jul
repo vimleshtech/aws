@@ -1,0 +1,61 @@
+VPC : Virtual private cloud
+=============================
+VPC CIDR 	:10.82.0.0/23	vpc-private-cloud
+DNS resolution	:yes
+DNS hostnames	:yes
+
+
+32-23= 9
+2^9    =  512
+
+		10.82.0.0-  	10.82.0.511  = 512
+
+subnet1		10.82.0.0 -	10.82.0.255  = 256
+subnet1		10.82.1.0 -	10.82.1.255  = 256
+	
+Subnet
+===============
+Subnet Public : 10.81.1.0/24	-subnet-public-1		us-east-2c
+	
+		10.82.1.0/24
+		8+8+8+8 
+		32   	- 24   = 8
+
+		2^8		= 256
+
+	
+Subnet Private: 10.82.0.0/24	-subnet-private-1
+
+		10.82.0.0 to 	 to 	10.82.0.127
+		10.82.0.128 to 	 to 	10.82.0.255
+
+Gateway
+================
+Create Gateway and Attach VPC-Public Subnet
+
+
+Route Table
+=================
+Routes:
+0.0.0.0/0 igw-03703ee9b12da7f03
+
+
+Subnet Associations:
+check to make it public:
+	subnet-08299800a5d82027f | tech-subnet-1a 10.81.1.0/24 rtb-0080041a5d834ed60
+
+
+Security Group
+======================
+
+	Input and output rule 
+	Edit Inbound Rule
+	
+		
+
+
+Volume
+==============
+Add additional Volume 
+	
+	
