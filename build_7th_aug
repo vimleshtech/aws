@@ -1,0 +1,28 @@
+GitHub : is repository to store or mange the code and documents
+==========
+
+GitHub 	: Cloud
+	https://github.com/
+
+Git 	: Local system
+
+
+Git  Life Cycle
+===================
+1. Folder and files on local system(desktop/laptop)
+2. git init 		: create local repository
+3. add files and folder to git stage
+	git add -A (all files)
+4. git commit :   commit the stage files to master repository 
+
+5. create alias of cloud
+6. push local master repository to cloud repo (origin)
+
+
+https://github.com/vimleshtech/aws_project.git
+
+
+jenkins
+========================
+create job/application/project
+
