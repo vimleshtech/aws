@@ -1,0 +1,90 @@
+-AWS Account and It's Sercices
+======================= 
+-> Free account for 12 months or 750 hours 
+	https://aws.amazon.com/aispl/registration-confirmation/
+  Credit Card Information:
+			INR 2.00 , will be revert back within 48 hours 
+	
+
+
+-> AWS Service
+	-Compute
+		EC2	
+		BeansTalk	-website hosting
+		CloudWath
+	-RDS			-database : RDBMS / MS 	SQL, My SQL, Oracle 
+	-S3			- storeas 
+	-DevOps 
+	etc.
+
+		
+-EC2 Instance/VM
+==========================
+-Create/Launch New Instance (server)
+-Choose Instance Type 
+-Enter Instance Number 
+	-Network
+	-Subnet
+	-Public IP 
+-Storage 
+	-8 gb is default of linux 
+
+-Tag  : keyname 
+	
+-Generate key:
+	webserver_aug28.pem
+-Server/Instance name : 
+		webserver_aug28
+save private key with new name
+
+	
+
+
+Public DNS (IPv4)
+	ec2-52-23-241-113.compute-1.amazonaws.com
+
+Install Putty Client:
+
+url:
+https://www.chiark.greenend.org.uk/~sgtatham/putty/
+
+
+-Install putty client/connector
+-Open the putty gen and load the download public key
+-and then click on save and save private key on local drive
+-Open putty client 
+
+
+-Configure the putty client using
+			ip address
+			user
+			auth key/private key
+
+-Connect the server
+-Linux Commands
+==================
+$pwd 	: show current path
+$ll	: show long list of files and folder
+$ls	: show short list
+$mkdir dirname : create new folder/directory
+$cd dirname    : change directory 
+$cat > filename.txt   : create new file 
+...enter content
+ctrl+z		: to save file 
+
+
+$cat filename.txt	            : show content of file
+
+$cat filename.txt >> nefilename.txt : make new file from existing file 
+
+$rm filename.txt	   : remove file 
+$cp sourcefile destfile    : copy file from source to destination 
+$mv sourcfile destlocation : move file from source to destination 
+$cd .. : go one folder back
+$cd ~  : go to root/parent directory 
+
+
+
+			
+
+
