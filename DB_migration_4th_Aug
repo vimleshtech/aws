@@ -1,0 +1,37 @@
+Database Migration 
+	Upgrade 
+
+
+Migration :
+	Server 1:   
+			local server (dev server)
+	Server 2:	
+			VM Server (cloud)
+			Prod server
+
+Dev -> test - >stage -> prod1
+		prod2
+
+
+there are different ways to migrate data
+ 1. generate the scripts with or without data and run on the db server
+2. backup and restore 
+	backup types:
+		-full backup
+		-differential backup
+		-transactional backup 
+
+	C:\Program Files\Microsoft SQL Server\MSSQL11.REPL\MSSQL\Backup\
+3. Link server
+	
+4. Tools : BI 
+	SSIS  (SQL Server integration services)
+	
+	
+	
+	
+	
+
+	
+			
+
