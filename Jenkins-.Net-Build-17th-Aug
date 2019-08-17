@@ -1,0 +1,29 @@
+Dependencies:
+	MSBuild - to execute and create the build .sln file
+	Nuget  - for reference 
+	Nunit	(Optional) - for execution tests
+	
+Global Tool Configuration:
+	Set environment path of MSBuild.exe file
+	c://program files/MSBuild/14.0/Bin/MSBuild.exe		
+
+Project github path:
+	https://github.com/executeautomation/SeleniumNUnitParam
+
+Dependency file in Project
+	packages.config
+
+	
+.net Framework and other dependency
+	chocolatey.org
+		
+
+	choco install microsoft-build-tools
+
+Build: (Build Environment) - batch
+	c:\\tools\nuget.exe restore proujectname.sln
+
+	--build a visual studio project
+MSBuild
+projectname.sln
+	
