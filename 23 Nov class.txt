@@ -1,0 +1,30 @@
+import boto3
+
+Access_key_ID='AKIAXM7XUAWH2HT6EAMM'
+Secret_access_key='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'
+s3 = boto3.client('s3',aws_access_key_id=Access_key_ID,aws_secret_access_key=Secret_access_key)
+
+
+
+def check_bucket(n):
+    response = s3.list_buckets()
+    l = response['Buckets']
+    is_match= False
+    for name in l:
+        if name['Name'] == n:
+            is_match=True
+    return is_match
+        
+
+o = open(r'C:\Users\vkumar15\Desktop\conf.txt')
+
+o.readline() #skip header 
+for x in o.readlines():
+    w = x.split(',')
+    if check_bucket(w[0]):
+        print('bucket is already present')
+    else:        
+        s3.create_bucket(Bucket=w[0])    
+        print('bucket is created')
+
+
