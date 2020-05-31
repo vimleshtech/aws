@@ -1,0 +1,44 @@
+New Windows Instance
+========================================
+User	: Administrator
+Password	: VpsV9!88.WC4oBSoWP6i9we!mG&-H9kO
+IP 	: 54.206.46.213
+
+CloudWatch , Notification
+=====================
+SNS : SNS Topics
+**SQS
+Lambda **
+
+CodePipeline -> Deploye
+=====================
+1. Code Commit:  github
+		- direct upload (this is not recommanded for realtime project)
+		- install git on local -> git init , git add , git commit , git push 
+2. We should have  IAM user or use existing Admin User Account
+		--credentials (1)  -- user -- 
+	"AWSCodeCommitFullAccess"
+	"AWSCodePipelineFullAccess" 
+
+		---credentials (2) ----
+	- github credentials 
+3.Service Role (there are multiple service which will communicate of talk with services)
+	example
+		- EC2 will access S3
+		- CodePipeline will access to codebuild and S3
+		
+ 	a. Role 1	
+	Service Name: "CodeDeploye"	
+	Role Name: PipeLineRole
+
+	b. Role 2
+	Service Name: "EC2"  
+			EC2 will acces to S3
+
+	Role Name: PipeLineEC2Role	
+
+	
+4.  Now setup the CodeCommit repository
+
+	https://git-codecommit.ap-southeast-2.amazonaws.com/v1/repos/PipeLineRepository
+
